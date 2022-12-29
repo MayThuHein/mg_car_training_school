@@ -76,14 +76,16 @@ class _CarKnowledgeWidgetState extends State<CarKnowledgeWidget> {
                                 MyTheme.mmText(
                                     carKnowledgeList[index]["title"]),
                                 style: const TextStyle(
-                                    height: 1.3, fontWeight: FontWeight.bold),
+                                    height: 1.45, fontWeight: FontWeight.bold),
                               ),
                               Text(
-                                  MyTheme.mmText(carKnowledgeList[index]
-                                      ["details"][0]["fact"]),
-                                  overflow: TextOverflow.ellipsis,
-                                  style: const TextStyle(height: 1.3),
-                                  maxLines: 2),
+                                MyTheme.mmText(carKnowledgeList[index]
+                                    ["details"][0]["fact"]),
+                                overflow: TextOverflow.ellipsis,
+                                style: const TextStyle(
+                                    height: 1.25, fontSize: 13.5),
+                                maxLines: 2,
+                              ),
                             ],
                           ),
                         ),
